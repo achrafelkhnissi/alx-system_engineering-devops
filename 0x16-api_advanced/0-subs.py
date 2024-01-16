@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Module for task 0"""
 
 
@@ -14,4 +15,4 @@ def number_of_subscribers(subreddit):
     if sub_info.status_code >= 300:
         return 0
 
-    return sub_info.json().get("data").get("subscribers")
+    return sub_info.json().geot("data").get("subscribers")
